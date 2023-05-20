@@ -8,6 +8,7 @@ import {
 
 import { Text, StatusBar } from "react-native";
 import { Loading } from "./src/components/Loading";
+import { Home } from "./src/screens/Home";
 
 export default function App() {
   const [fontloaded] = useFonts({
@@ -18,7 +19,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar />
-      {fontloaded ? <Text>Projeto Inicializado!!!</Text> : <Loading />}
+      {fontloaded ? <Home /> : <Loading />}
     </ThemeProvider>
   );
 }
