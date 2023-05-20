@@ -1,14 +1,12 @@
-import { Container, Header, Logo, Photograph } from "./styles";
-import LogoMarca from "../../assets/Logo.png";
-import Perfil from "../../assets/Foto-perfil.png";
+import { Container } from "./styles";
+import { DietStatistics } from "../../components/DietStatistics";
+import { Header } from "../../components/Header";
 
 export const Home = () => {
   return (
     <Container>
-      <Header>
-        <Logo source={LogoMarca} />
-        <Photograph source={Perfil} />
-      </Header>
+      <Header />
+      <DietStatistics />
     </Container>
   );
 };
