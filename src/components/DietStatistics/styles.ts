@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import styled, { css } from "styled-components/native";
 import { ArrowUpRight } from "phosphor-react-native";
 
@@ -6,7 +6,7 @@ export interface DietStatisticStyleProps {
   type?: "PRIMARY" | "SECUNDARY";
 }
 
-export const Container = styled(View)<DietStatisticStyleProps>`
+export const Container = styled(TouchableOpacity)<DietStatisticStyleProps>`
   width: 90%;
   height: 102px;
 
