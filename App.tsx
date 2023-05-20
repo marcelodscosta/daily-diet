@@ -6,7 +6,8 @@ import {
   NunitoSans_700Bold,
 } from "@expo-google-fonts/nunito-sans";
 
-import { Text, StatusBar, ActivityIndicator } from "react-native";
+import { Text, StatusBar } from "react-native";
+import { Loading } from "./src/components/Loading";
 
 export default function App() {
   const [fontloaded] = useFonts({
@@ -17,11 +18,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar />
-      {fontloaded ? (
-        <Text>Projeto Inicializado!!!</Text>
-      ) : (
-        <ActivityIndicator />
-      )}
+      {fontloaded ? <Text>Projeto Inicializado!!!</Text> : <Loading />}
     </ThemeProvider>
   );
 }
