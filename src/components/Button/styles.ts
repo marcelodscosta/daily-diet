@@ -9,6 +9,7 @@ export const Container = styled(TouchableOpacity)`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border-radius: 6px;
 `;
 
 export const Icon = styled(Plus).attrs(({ theme }) => ({
