@@ -5,7 +5,7 @@ interface NoticeStyleProps {
   type?: "PRIMARY" | "SECUNDARY";
 }
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   width: 100%;
   height: 49px;
   border: 0.1px solid;

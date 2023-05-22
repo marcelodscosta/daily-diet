@@ -7,15 +7,21 @@ import {
   Wraper,
 } from "./styles";
 
-export const CardMeals = () => {
+interface CardMealsProps {
+  type: "PRIMARY" | "SECUNDARY";
+  hour: string;
+  description: string;
+}
+
+export const CardMeals = ({ type, hour, description }: CardMealsProps) => {
   return (
     <Container>
       <Wraper>
-        <TextHour>20:00</TextHour>
+        <TextHour>{hour}</TextHour>
         <Pipeline>|</Pipeline>
-        <TextSnack>X-tudo</TextSnack>
+        <TextSnack>{description}</TextSnack>
       </Wraper>
-      <Notice type="PRIMARY" />
+      <Notice type={type} />
     </Container>
   );
 };

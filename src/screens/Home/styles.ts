@@ -19,3 +19,10 @@ export const SubTitle = styled.Text`
   margin-top: 40px;
   margin-bottom: 12px;
 `;
+
+export const Listing = styled.View`
+  width: 100%;
+  flex: 1;
+  margin-left: 32px;
+  padding-bottom: 16px;
+`;
