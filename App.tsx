@@ -6,9 +6,10 @@ import {
   NunitoSans_700Bold,
 } from "@expo-google-fonts/nunito-sans";
 
-import { Text, StatusBar } from "react-native";
+import { StatusBar } from "react-native";
 import { Loading } from "./src/components/Loading";
 import { Home } from "./src/screens/Home";
+import { StatisticsDetails } from "./src/screens/StatitisticsDetails";
 
 export default function App() {
   const [fontloaded] = useFonts({
@@ -18,8 +19,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar />
-      {fontloaded ? <Home /> : <Loading />}
+      <StatusBar barStyle="default" />
+      {fontloaded ? <StatisticsDetails /> : <Loading />}
     </ThemeProvider>
   );
 }
